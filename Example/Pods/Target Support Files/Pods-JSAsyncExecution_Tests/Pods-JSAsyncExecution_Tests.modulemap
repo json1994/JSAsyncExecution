@@ -1,0 +1,6 @@
+framework module Pods_JSAsyncExecution_Tests {
+  umbrella header "Pods-JSAsyncExecution_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

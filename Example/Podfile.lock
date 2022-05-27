@@ -1,0 +1,16 @@
+PODS:
+  - JSAsyncExecution (0.1.0)
+
+DEPENDENCIES:
+  - JSAsyncExecution (from `../`)
+
+EXTERNAL SOURCES:
+  JSAsyncExecution:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JSAsyncExecution: ba1b80b4953a30f945e32171d9c085e82af291f6
+
+PODFILE CHECKSUM: bb005c5026df1d4447c1529e43ec884052c0efb7
+
+COCOAPODS: 1.11.3

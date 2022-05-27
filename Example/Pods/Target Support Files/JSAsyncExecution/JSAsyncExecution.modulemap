@@ -1,0 +1,6 @@
+framework module JSAsyncExecution {
+  umbrella header "JSAsyncExecution-umbrella.h"
+
+  export *
+  module * { export * }
+}

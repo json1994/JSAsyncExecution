@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017C08DD14DAE71F3C794A8E19CCF661 /* Pods-JSAsyncExecution_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAEF2B74F301A221C671C7A5454EB91 /* Pods-JSAsyncExecution_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09F69C7553BC32973EC951066C80C623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0B89FD6F6806495EADE81E61189FC10A /* Pods-JSAsyncExecution_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3491C93AA5182E265E7B7C0831C8D536 /* Pods-JSAsyncExecution_Example-dummy.m */; };
+		1F80906916AC1FBD469A4ACCC1129C0D /* JSAsyncOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 780D00FDC9873336E92D1866C8C42841 /* JSAsyncOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40A6176A92BA1482F119CA3F5CA27070 /* JSExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ECF7950BC6B911780F37CBBA87C83 /* JSExecutor.m */; };
+		5D0CA870E0DB94B429BC544330B219FA /* _JSAsyncExecutionSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F50B349CC1B1E4483D7ABF1622EDC24 /* _JSAsyncExecutionSetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D6E86E6A7CC22CBCECF8FE089E41FDE /* JSExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = FD6EC02E2DD60F59ABFD962BA44835BC /* JSExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		673D4B0AC8A71E21BCAEB6D24E970C83 /* Pods-JSAsyncExecution_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5A23A345D1AB4050B194E834F43E7 /* Pods-JSAsyncExecution_Tests-dummy.m */; };
+		8223BE27A636E4E6DF2B43F6B3B6A39E /* JSAsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AD8EFA5C265CB4AC66C1560D52826C /* JSAsyncOperation.m */; };
+		A2A69B820E0FF18972A90E63F2A55994 /* JSAsyncExecutionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 75609A0E5D411D61EBE478D2442A2847 /* JSAsyncExecutionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B09084085D4524DF3DFA1B6B10411FDD /* JSAsyncExecution-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E08FC9947F06563A344C17D1C96D913 /* JSAsyncExecution-dummy.m */; };
+		B86209B772D4839313B5C8BC73163FC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C4A62C67B14AE7DBAA566872DB52C0B8 /* NSObject+AsyncExecution.h in Headers */ = {isa = PBXBuildFile; fileRef = 1711B3DE8BC505F7F4818CF35E034D6B /* NSObject+AsyncExecution.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5B87A5748D9FBA52E188C7C8DE59AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D965812E804F34AC66DB23D4DCAA5440 /* _JSAsyncExecutionSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F35060A487F3383247C45C9BF2DF79 /* _JSAsyncExecutionSetter.m */; };
+		DC984C06DBDB7DD5E5B590B048DF5DC9 /* JSAsyncExecution-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98BB07AE43946CF1D1E54FF01C9EA58E /* JSAsyncExecution-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1A145EA695D1E8409DA8F4A6247AA7 /* NSObject+AsyncExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC8B0C4400003E8173D86D72AA586B /* NSObject+AsyncExecution.m */; };
+		E606ABFC19F3FA986535BE8A0DD6EF14 /* JSAsyncExecutionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E320A583AFB5672E2B09A7A80D33D1E2 /* JSAsyncExecutionManager.m */; };
+		EA9F47DF7494187E93438276AE01BB8E /* Pods-JSAsyncExecution_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC3D37001B8B7D7FEA93D3AB63E742B /* Pods-JSAsyncExecution_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B758358F58FF2E3FCDC2567303434AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC1CAC6E3E4E2145F1CBBCDAD972F12;
+			remoteInfo = JSAsyncExecution;
+		};
+		CFAFE3872DFE3CEA4705888FBD8D4EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B877B72303820F3B7F26A025BD66F34;
+			remoteInfo = "Pods-JSAsyncExecution_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		094EF2D16C73DD17E074531F8A222B55 /* Pods-JSAsyncExecution_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JSAsyncExecution_Example.modulemap"; sourceTree = "<group>"; };
+		0C785ADC74917961F76B05C63929E1F5 /* Pods-JSAsyncExecution_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JSAsyncExecution_Example-Info.plist"; sourceTree = "<group>"; };
+		0E08FC9947F06563A344C17D1C96D913 /* JSAsyncExecution-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSAsyncExecution-dummy.m"; sourceTree = "<group>"; };
+		1711B3DE8BC505F7F4818CF35E034D6B /* NSObject+AsyncExecution.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AsyncExecution.h"; path = "JSAsyncExecution/Classes/NSObject+AsyncExecution.h"; sourceTree = "<group>"; };
+		18704D607073D346D4CE8E7DDE6348C1 /* JSAsyncExecution.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JSAsyncExecution.modulemap; sourceTree = "<group>"; };
+		18F35060A487F3383247C45C9BF2DF79 /* _JSAsyncExecutionSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _JSAsyncExecutionSetter.m; path = JSAsyncExecution/Classes/_JSAsyncExecutionSetter.m; sourceTree = "<group>"; };
+		2A29E04B056CFCF4FC5A7F321EF1306F /* Pods-JSAsyncExecution_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSAsyncExecution_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3491C93AA5182E265E7B7C0831C8D536 /* Pods-JSAsyncExecution_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JSAsyncExecution_Example-dummy.m"; sourceTree = "<group>"; };
+		34B24A13BDAAA3C14F3B484C2F0D383D /* Pods-JSAsyncExecution_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JSAsyncExecution_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3CDA82B5C8D07FB7F1731DCB1415CB7A /* Pods-JSAsyncExecution_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JSAsyncExecution_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3F50B349CC1B1E4483D7ABF1622EDC24 /* _JSAsyncExecutionSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _JSAsyncExecutionSetter.h; path = JSAsyncExecution/Classes/_JSAsyncExecutionSetter.h; sourceTree = "<group>"; };
+		47AE512BBA70672F7401D630DDD0C779 /* JSAsyncExecution-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JSAsyncExecution-Info.plist"; sourceTree = "<group>"; };
+		589A3292BB541FF8B3DA649E20CE2768 /* JSAsyncExecution */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JSAsyncExecution; path = JSAsyncExecution.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F871E808CF505A884E7FD8C71F5D30 /* Pods-JSAsyncExecution_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JSAsyncExecution_Tests.modulemap"; sourceTree = "<group>"; };
+		5C8BA612E6FE863A7C89CA8B307FE46E /* JSAsyncExecution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSAsyncExecution.debug.xcconfig; sourceTree = "<group>"; };
+		5CE4031A0ED129BA88232E9FF60D81AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5EE5A23A345D1AB4050B194E834F43E7 /* Pods-JSAsyncExecution_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JSAsyncExecution_Tests-dummy.m"; sourceTree = "<group>"; };
+		642D1B787D597073BB429DAAF812F13F /* Pods-JSAsyncExecution_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSAsyncExecution_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6FA0367FF8D6DB58C777B33F3ED83F48 /* Pods-JSAsyncExecution_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JSAsyncExecution_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		742F8336BC7E2ECF8A74E4EF20468C1E /* Pods-JSAsyncExecution_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JSAsyncExecution_Example"; path = Pods_JSAsyncExecution_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75609A0E5D411D61EBE478D2442A2847 /* JSAsyncExecutionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSAsyncExecutionManager.h; path = JSAsyncExecution/Classes/JSAsyncExecutionManager.h; sourceTree = "<group>"; };
+		780D00FDC9873336E92D1866C8C42841 /* JSAsyncOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSAsyncOperation.h; path = JSAsyncExecution/Classes/JSAsyncOperation.h; sourceTree = "<group>"; };
+		7A6B75F85D28B862359E67C6FADBD7CA /* JSAsyncExecution-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSAsyncExecution-prefix.pch"; sourceTree = "<group>"; };
+		7B260AE8C6311656280EAFFF2B3EA02F /* Pods-JSAsyncExecution_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JSAsyncExecution_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		837ECF7950BC6B911780F37CBBA87C83 /* JSExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSExecutor.m; path = JSAsyncExecution/Classes/JSExecutor.m; sourceTree = "<group>"; };
+		83F802E9D86416B63C4D7593DF72814B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		98BB07AE43946CF1D1E54FF01C9EA58E /* JSAsyncExecution-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSAsyncExecution-umbrella.h"; sourceTree = "<group>"; };
+		9BC3D37001B8B7D7FEA93D3AB63E742B /* Pods-JSAsyncExecution_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JSAsyncExecution_Tests-umbrella.h"; sourceTree = "<group>"; };
+		9D2A5384E3E418B7E78E7CFEC386ABF2 /* JSAsyncExecution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSAsyncExecution.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D9689153797428AA69616CFB6255BFC /* Pods-JSAsyncExecution_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JSAsyncExecution_Tests"; path = Pods_JSAsyncExecution_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF191F5B7B3866470665885807E74D1 /* Pods-JSAsyncExecution_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSAsyncExecution_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A5A914268D1630EE4FEB95E5ADE10072 /* JSAsyncExecution.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JSAsyncExecution.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		AADC8B0C4400003E8173D86D72AA586B /* NSObject+AsyncExecution.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AsyncExecution.m"; path = "JSAsyncExecution/Classes/NSObject+AsyncExecution.m"; sourceTree = "<group>"; };
+		B71DCE15235D65921C8F96E85E265D1D /* Pods-JSAsyncExecution_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSAsyncExecution_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D977F174D44AB8F7154FFB3F59EB4712 /* Pods-JSAsyncExecution_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSAsyncExecution_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E2AD8EFA5C265CB4AC66C1560D52826C /* JSAsyncOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSAsyncOperation.m; path = JSAsyncExecution/Classes/JSAsyncOperation.m; sourceTree = "<group>"; };
+		E320A583AFB5672E2B09A7A80D33D1E2 /* JSAsyncExecutionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSAsyncExecutionManager.m; path = JSAsyncExecution/Classes/JSAsyncExecutionManager.m; sourceTree = "<group>"; };
+		F396284D8EAA0DC14461B8556BB7D2D1 /* Pods-JSAsyncExecution_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JSAsyncExecution_Tests-Info.plist"; sourceTree = "<group>"; };
+		FAAEF2B74F301A221C671C7A5454EB91 /* Pods-JSAsyncExecution_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JSAsyncExecution_Example-umbrella.h"; sourceTree = "<group>"; };
+		FD6EC02E2DD60F59ABFD962BA44835BC /* JSExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSExecutor.h; path = JSAsyncExecution/Classes/JSExecutor.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C1313A65A1B25CBD5888147A0C03DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86209B772D4839313B5C8BC73163FC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457C57E68E96F86681F420CF63B55F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F69C7553BC32973EC951066C80C623 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E29E3AD04DA1DC590A769E400B4E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B87A5748D9FBA52E188C7C8DE59AE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37B8F4F60EC622D4EC6C5DD8384FEB1B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A5A914268D1630EE4FEB95E5ADE10072 /* JSAsyncExecution.podspec */,
+				5CE4031A0ED129BA88232E9FF60D81AC /* LICENSE */,
+				83F802E9D86416B63C4D7593DF72814B /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		709B68EE7E2E6C5B2E049E14E7FED96A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDA7EEDF36E8C4656A82EA0C990AE8F3 /* JSAsyncExecution */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		92474BD85F3BF0DF7B91BBCFC1849B24 /* Pods-JSAsyncExecution_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				58F871E808CF505A884E7FD8C71F5D30 /* Pods-JSAsyncExecution_Tests.modulemap */,
+				34B24A13BDAAA3C14F3B484C2F0D383D /* Pods-JSAsyncExecution_Tests-acknowledgements.markdown */,
+				3CDA82B5C8D07FB7F1731DCB1415CB7A /* Pods-JSAsyncExecution_Tests-acknowledgements.plist */,
+				5EE5A23A345D1AB4050B194E834F43E7 /* Pods-JSAsyncExecution_Tests-dummy.m */,
+				F396284D8EAA0DC14461B8556BB7D2D1 /* Pods-JSAsyncExecution_Tests-Info.plist */,
+				9BC3D37001B8B7D7FEA93D3AB63E742B /* Pods-JSAsyncExecution_Tests-umbrella.h */,
+				642D1B787D597073BB429DAAF812F13F /* Pods-JSAsyncExecution_Tests.debug.xcconfig */,
+				B71DCE15235D65921C8F96E85E265D1D /* Pods-JSAsyncExecution_Tests.release.xcconfig */,
+			);
+			name = "Pods-JSAsyncExecution_Tests";
+			path = "Target Support Files/Pods-JSAsyncExecution_Tests";
+			sourceTree = "<group>";
+		};
+		BC95BD2001D8FEA299905D9212ED340B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C24E4B15E23DFD2A9E795084A736790D /* Pods-JSAsyncExecution_Example */,
+				92474BD85F3BF0DF7B91BBCFC1849B24 /* Pods-JSAsyncExecution_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C24E4B15E23DFD2A9E795084A736790D /* Pods-JSAsyncExecution_Example */ = {
+			isa = PBXGroup;
+			children = (
+				094EF2D16C73DD17E074531F8A222B55 /* Pods-JSAsyncExecution_Example.modulemap */,
+				7B260AE8C6311656280EAFFF2B3EA02F /* Pods-JSAsyncExecution_Example-acknowledgements.markdown */,
+				6FA0367FF8D6DB58C777B33F3ED83F48 /* Pods-JSAsyncExecution_Example-acknowledgements.plist */,
+				3491C93AA5182E265E7B7C0831C8D536 /* Pods-JSAsyncExecution_Example-dummy.m */,
+				D977F174D44AB8F7154FFB3F59EB4712 /* Pods-JSAsyncExecution_Example-frameworks.sh */,
+				0C785ADC74917961F76B05C63929E1F5 /* Pods-JSAsyncExecution_Example-Info.plist */,
+				FAAEF2B74F301A221C671C7A5454EB91 /* Pods-JSAsyncExecution_Example-umbrella.h */,
+				2A29E04B056CFCF4FC5A7F321EF1306F /* Pods-JSAsyncExecution_Example.debug.xcconfig */,
+				9FF191F5B7B3866470665885807E74D1 /* Pods-JSAsyncExecution_Example.release.xcconfig */,
+			);
+			name = "Pods-JSAsyncExecution_Example";
+			path = "Target Support Files/Pods-JSAsyncExecution_Example";
+			sourceTree = "<group>";
+		};
+		C3781D9E03F601D9387FB58B99777153 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18704D607073D346D4CE8E7DDE6348C1 /* JSAsyncExecution.modulemap */,
+				0E08FC9947F06563A344C17D1C96D913 /* JSAsyncExecution-dummy.m */,
+				47AE512BBA70672F7401D630DDD0C779 /* JSAsyncExecution-Info.plist */,
+				7A6B75F85D28B862359E67C6FADBD7CA /* JSAsyncExecution-prefix.pch */,
+				98BB07AE43946CF1D1E54FF01C9EA58E /* JSAsyncExecution-umbrella.h */,
+				5C8BA612E6FE863A7C89CA8B307FE46E /* JSAsyncExecution.debug.xcconfig */,
+				9D2A5384E3E418B7E78E7CFEC386ABF2 /* JSAsyncExecution.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JSAsyncExecution";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				709B68EE7E2E6C5B2E049E14E7FED96A /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E074BF62B93E7235675EAC57EC64210E /* Products */,
+				BC95BD2001D8FEA299905D9212ED340B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E074BF62B93E7235675EAC57EC64210E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				589A3292BB541FF8B3DA649E20CE2768 /* JSAsyncExecution */,
+				742F8336BC7E2ECF8A74E4EF20468C1E /* Pods-JSAsyncExecution_Example */,
+				9D9689153797428AA69616CFB6255BFC /* Pods-JSAsyncExecution_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDA7EEDF36E8C4656A82EA0C990AE8F3 /* JSAsyncExecution */ = {
+			isa = PBXGroup;
+			children = (
+				3F50B349CC1B1E4483D7ABF1622EDC24 /* _JSAsyncExecutionSetter.h */,
+				18F35060A487F3383247C45C9BF2DF79 /* _JSAsyncExecutionSetter.m */,
+				75609A0E5D411D61EBE478D2442A2847 /* JSAsyncExecutionManager.h */,
+				E320A583AFB5672E2B09A7A80D33D1E2 /* JSAsyncExecutionManager.m */,
+				780D00FDC9873336E92D1866C8C42841 /* JSAsyncOperation.h */,
+				E2AD8EFA5C265CB4AC66C1560D52826C /* JSAsyncOperation.m */,
+				FD6EC02E2DD60F59ABFD962BA44835BC /* JSExecutor.h */,
+				837ECF7950BC6B911780F37CBBA87C83 /* JSExecutor.m */,
+				1711B3DE8BC505F7F4818CF35E034D6B /* NSObject+AsyncExecution.h */,
+				AADC8B0C4400003E8173D86D72AA586B /* NSObject+AsyncExecution.m */,
+				37B8F4F60EC622D4EC6C5DD8384FEB1B /* Pod */,
+				C3781D9E03F601D9387FB58B99777153 /* Support Files */,
+			);
+			name = JSAsyncExecution;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		269E8F31B3DB70A960110EBABACBA6BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017C08DD14DAE71F3C794A8E19CCF661 /* Pods-JSAsyncExecution_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C836B56E1E74FBB8E32A690A8C438A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9F47DF7494187E93438276AE01BB8E /* Pods-JSAsyncExecution_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C439179C620141B4B54F7CBF23A2A2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0CA870E0DB94B429BC544330B219FA /* _JSAsyncExecutionSetter.h in Headers */,
+				DC984C06DBDB7DD5E5B590B048DF5DC9 /* JSAsyncExecution-umbrella.h in Headers */,
+				A2A69B820E0FF18972A90E63F2A55994 /* JSAsyncExecutionManager.h in Headers */,
+				1F80906916AC1FBD469A4ACCC1129C0D /* JSAsyncOperation.h in Headers */,
+				5D6E86E6A7CC22CBCECF8FE089E41FDE /* JSExecutor.h in Headers */,
+				C4A62C67B14AE7DBAA566872DB52C0B8 /* NSObject+AsyncExecution.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3FC1CAC6E3E4E2145F1CBBCDAD972F12 /* JSAsyncExecution */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006332777DB8689B0453469001869E6C /* Build configuration list for PBXNativeTarget "JSAsyncExecution" */;
+			buildPhases = (
+				6C439179C620141B4B54F7CBF23A2A2A /* Headers */,
+				33753220CA5946C7F90C60329CB9B55E /* Sources */,
+				F0E29E3AD04DA1DC590A769E400B4E5A /* Frameworks */,
+				C9F1BFA6B5A53937248206F20FDACDD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSAsyncExecution;
+			productName = JSAsyncExecution;
+			productReference = 589A3292BB541FF8B3DA649E20CE2768 /* JSAsyncExecution */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B877B72303820F3B7F26A025BD66F34 /* Pods-JSAsyncExecution_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F9B57BB63C2442FFCC25EAC440165B7 /* Build configuration list for PBXNativeTarget "Pods-JSAsyncExecution_Example" */;
+			buildPhases = (
+				269E8F31B3DB70A960110EBABACBA6BA /* Headers */,
+				0EA2210CB658F5359BBCA05689BC408D /* Sources */,
+				2C1313A65A1B25CBD5888147A0C03DE5 /* Frameworks */,
+				986D457C2A26C9F67E2B411475AE8F5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3B7D47EB5729C0CCF41C39DBCFCCD84 /* PBXTargetDependency */,
+			);
+			name = "Pods-JSAsyncExecution_Example";
+			productName = Pods_JSAsyncExecution_Example;
+			productReference = 742F8336BC7E2ECF8A74E4EF20468C1E /* Pods-JSAsyncExecution_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		B32B276E28312B135EFC35E742604793 /* Pods-JSAsyncExecution_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8CA5A57FAF473C7B3F9C4A61C13C318 /* Build configuration list for PBXNativeTarget "Pods-JSAsyncExecution_Tests" */;
+			buildPhases = (
+				39C836B56E1E74FBB8E32A690A8C438A /* Headers */,
+				BFED9C978E513C21216AD2A9CCE51D30 /* Sources */,
+				457C57E68E96F86681F420CF63B55F0B /* Frameworks */,
+				913521730411CB2D9C63B58E29AF0827 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1A36FA9CADC096252DFADB9FC2C5B7B /* PBXTargetDependency */,
+			);
+			name = "Pods-JSAsyncExecution_Tests";
+			productName = Pods_JSAsyncExecution_Tests;
+			productReference = 9D9689153797428AA69616CFB6255BFC /* Pods-JSAsyncExecution_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E074BF62B93E7235675EAC57EC64210E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC1CAC6E3E4E2145F1CBBCDAD972F12 /* JSAsyncExecution */,
+				5B877B72303820F3B7F26A025BD66F34 /* Pods-JSAsyncExecution_Example */,
+				B32B276E28312B135EFC35E742604793 /* Pods-JSAsyncExecution_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		913521730411CB2D9C63B58E29AF0827 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986D457C2A26C9F67E2B411475AE8F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9F1BFA6B5A53937248206F20FDACDD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EA2210CB658F5359BBCA05689BC408D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B89FD6F6806495EADE81E61189FC10A /* Pods-JSAsyncExecution_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33753220CA5946C7F90C60329CB9B55E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D965812E804F34AC66DB23D4DCAA5440 /* _JSAsyncExecutionSetter.m in Sources */,
+				B09084085D4524DF3DFA1B6B10411FDD /* JSAsyncExecution-dummy.m in Sources */,
+				E606ABFC19F3FA986535BE8A0DD6EF14 /* JSAsyncExecutionManager.m in Sources */,
+				8223BE27A636E4E6DF2B43F6B3B6A39E /* JSAsyncOperation.m in Sources */,
+				40A6176A92BA1482F119CA3F5CA27070 /* JSExecutor.m in Sources */,
+				DE1A145EA695D1E8409DA8F4A6247AA7 /* NSObject+AsyncExecution.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFED9C978E513C21216AD2A9CCE51D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673D4B0AC8A71E21BCAEB6D24E970C83 /* Pods-JSAsyncExecution_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1A36FA9CADC096252DFADB9FC2C5B7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JSAsyncExecution_Example";
+			target = 5B877B72303820F3B7F26A025BD66F34 /* Pods-JSAsyncExecution_Example */;
+			targetProxy = CFAFE3872DFE3CEA4705888FBD8D4EB6 /* PBXContainerItemProxy */;
+		};
+		F3B7D47EB5729C0CCF41C39DBCFCCD84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSAsyncExecution;
+			target = 3FC1CAC6E3E4E2145F1CBBCDAD972F12 /* JSAsyncExecution */;
+			targetProxy = B758358F58FF2E3FCDC2567303434AD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002A99BC219D56EF4005D591FFDFB4F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF191F5B7B3866470665885807E74D1 /* Pods-JSAsyncExecution_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JSAsyncExecution_Example/Pods-JSAsyncExecution_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JSAsyncExecution_Example/Pods-JSAsyncExecution_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3902FE1EDCEFD7CD656B7F11FD368F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A29E04B056CFCF4FC5A7F321EF1306F /* Pods-JSAsyncExecution_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JSAsyncExecution_Example/Pods-JSAsyncExecution_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JSAsyncExecution_Example/Pods-JSAsyncExecution_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F95C9086A78D0E4841112C22AEDC59B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B71DCE15235D65921C8F96E85E265D1D /* Pods-JSAsyncExecution_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JSAsyncExecution_Tests/Pods-JSAsyncExecution_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JSAsyncExecution_Tests/Pods-JSAsyncExecution_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8869E7CC2057BA52D96167AA83A7BCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 642D1B787D597073BB429DAAF812F13F /* Pods-JSAsyncExecution_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JSAsyncExecution_Tests/Pods-JSAsyncExecution_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JSAsyncExecution_Tests/Pods-JSAsyncExecution_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9500E12B01FCC947AB0DCA6F38EE0311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2A5384E3E418B7E78E7CFEC386ABF2 /* JSAsyncExecution.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JSAsyncExecution/JSAsyncExecution-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSAsyncExecution/JSAsyncExecution-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSAsyncExecution/JSAsyncExecution.modulemap";
+				PRODUCT_MODULE_NAME = JSAsyncExecution;
+				PRODUCT_NAME = JSAsyncExecution;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FFF199D623BBB908C1D212C39642783F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8BA612E6FE863A7C89CA8B307FE46E /* JSAsyncExecution.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JSAsyncExecution/JSAsyncExecution-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSAsyncExecution/JSAsyncExecution-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSAsyncExecution/JSAsyncExecution.modulemap";
+				PRODUCT_MODULE_NAME = JSAsyncExecution;
+				PRODUCT_NAME = JSAsyncExecution;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		006332777DB8689B0453469001869E6C /* Build configuration list for PBXNativeTarget "JSAsyncExecution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF199D623BBB908C1D212C39642783F /* Debug */,
+				9500E12B01FCC947AB0DCA6F38EE0311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F9B57BB63C2442FFCC25EAC440165B7 /* Build configuration list for PBXNativeTarget "Pods-JSAsyncExecution_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3902FE1EDCEFD7CD656B7F11FD368F70 /* Debug */,
+				002A99BC219D56EF4005D591FFDFB4F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8CA5A57FAF473C7B3F9C4A61C13C318 /* Build configuration list for PBXNativeTarget "Pods-JSAsyncExecution_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8869E7CC2057BA52D96167AA83A7BCCB /* Debug */,
+				7F95C9086A78D0E4841112C22AEDC59B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
