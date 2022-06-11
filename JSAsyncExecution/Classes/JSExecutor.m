@@ -38,13 +38,13 @@
 @implementation JSExecutor (Completion)
 
 - (void)setResponse:(id)response {
-    objc_setAssociatedObject(self, @selector(setResponse:), response, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(response), response, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (id)response {
     return objc_getAssociatedObject(self, _cmd);
 }
 - (void)setError:(NSError *)error {
-    objc_setAssociatedObject(self, @selector(setError:), error, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(error), error, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (NSError *)error {
     return objc_getAssociatedObject(self, _cmd);
